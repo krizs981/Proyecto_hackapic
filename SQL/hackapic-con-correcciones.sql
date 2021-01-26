@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS imagen (
 ) ENGINE=INNODB;
 
 CREATE TABLE IF NOT EXISTS da_like (
-	id_usuario INTEGER AUTO_INCREMENT,
+	id_usuario INTEGER NOT NULL,
 	id_imagen INTEGER NOT NULL,
     PRIMARY KEY(id_usuario, id_imagen),
 	CONSTRAINT da_like_id_usuario_fk1
